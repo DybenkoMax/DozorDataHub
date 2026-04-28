@@ -1,0 +1,66 @@
+# Root .gitignore for VARTA AI HUB
+# ─────────────────────────────────
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+*.egg
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Environment files
+.env
+.env.local
+.env.*.local
+backend/.env
+!backend/.env.example
+!.env.example
+
+# Docker
+*.override.yml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Kubernetes
+k8s/secrets*.yaml
+
+# Terraform / temp
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+
+# Logs
+*.log
+logs/
+
+# Model files (large binaries — store in Azure Blob)
+*.pt
+*.onnx
+*.tflite
+*.weights
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
