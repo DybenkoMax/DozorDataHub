@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: varta-ai-hub
+    runtime: python
+    buildCommand: echo no-build
+    startCommand: python3 varta_hub_v2.py
+    healthCheckPath: /aihub/health
